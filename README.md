@@ -1,5 +1,6 @@
-##### Hi there 👋
-
+# Hi there 👋
+## I am Muhammad Ali Final Year Undegraduate at NIT Rourkela.
+- 🌱 I’m currently learning Next.js React FrameWork
 <!--
 **ali-mandela/ali-mandela** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
