@@ -1,6 +1,8 @@
-# Hi there 👋
-## I am Muhammad Ali Final Year Undegraduate at NIT Rourkela.
-- 🌱 I’m currently learning Next.js React FrameWork
+# Jullay / Asalamualikum 👋
+## I am Muhammad Ali Final Year computer science Undegraduate at NIT Rourkela.I haved worked as Frontend developer with Ecera Systems and Skropay for more than 6 months.I also having experience with backend and looking actively for role of full stack developer.
+
+<!-- - 🔭 I’m currently working on e -->
+<!-- - 🌱 I’m currently learning Next.js React FrameWork -->
 <!--
 **ali-mandela/ali-mandela** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
