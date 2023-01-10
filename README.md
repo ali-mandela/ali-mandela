@@ -1,7 +1,7 @@
 # Jullay / Asalamualikum 👋
 ## I am Muhammad Ali Final Year computer science Undegraduate at NIT Rourkela.I haved worked as Frontend developer with Ecera Systems and Skropay for more than 6 months.I also having experience with backend and looking actively for role of full stack developer.
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+  <img src="https://media.giphy.com/media/HscDLzkO8EOTmgkhQP/giphy.gif" width="100"/>
 </div>
 <div>
   <h1>Jullay / Asalamualikum 🤝</h1>
