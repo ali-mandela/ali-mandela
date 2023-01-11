@@ -65,7 +65,9 @@ I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=ali-mandela)](https://git.io/streak-stats)
 
 
-!-- - 🔭 I’m currently working on e -->
+<!-- !-- - 🔭 I’m currently working on e --> -->
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ali-mandela)](https://github.com/ali-mandela/github-readme-stats)
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ali-mandela)](https://github.com/ali-mandela/github-readme-stats)
 <!-- - 🌱 I’m currently learning Next.js React FrameWork -->
 <!--
