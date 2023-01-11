@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
 </div>
-<img src="https://komarev.com/ghpvc/?username=ali-mandela<div align="center">
+<!-- <img src="https://komarev.com/ghpvc/?username=ali-mandela<div align="center"> -->
   <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
 </div>
 &style=flat-square&color=blue" alt=""/><div align="center">
@@ -66,6 +66,7 @@ I am a Full Stack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEm
 
 
 !-- - 🔭 I’m currently working on e -->
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ali-mandela)](https://github.com/ali-mandela/github-readme-stats)
 <!-- - 🌱 I’m currently learning Next.js React FrameWork -->
 <!--
 **ali-mandela/ali-mandela** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
