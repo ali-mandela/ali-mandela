@@ -1,6 +1,3 @@
-Certainly! Let's enhance the design and layout to make it more visually appealing, similar to a professional GitHub account.
-
-```markdown
 <div align="center">
   <img src="https://media.giphy.com/media/HscDLzkO8EOTmgkhQP/giphy.gif" width="100"/>
 </div>
@@ -118,7 +115,3 @@ Certainly! Let's enhance the design and layout to make it more visually appealin
     </li>
   </ul>
 </div>
-
-```
-
-This layout incorporates a cleaner design with centered alignment and organized sections for better readability. Feel free to adjust the styling further to match your preferences!
