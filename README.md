@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1>Hello, I'm Muhammad Ali! 👋</h1>
-  <h2>Final Year Computer Science undergraduate at NIT Rourkela | Frontend Developer</h2>
+  <h2>Computer Science graduate From NIT Rourkela | javascript Developer | C++ programmer</h2>
   <p>I'm a passionate developer with experience in frontend development, seeking opportunities as a Full Stack Developer.</p>
   <div id="links">
     <a href="https://github.com/ali-mandela">GitHub</a> •
