@@ -20,7 +20,7 @@
     <li><strong>Address:</strong> NIT Rourkela, Sundargarh, Odisha-769008, India</li>
     <li><strong>Mobile:</strong> +91-7008527361</li>
     <li><strong>Email:</strong> muhammadali.nitrkl@gmail.com</li>
-    <li><strong>Website:</strong> <a href="https://muhammad-ali.vercel.app/">muhammad-ali.vercel.app</a></li>
+    <li><strong>Website:</strong> <a href="https://mandelaali.onrender.com/">mandelaali.dev</a></li>
   </ul>
 </div>
 
