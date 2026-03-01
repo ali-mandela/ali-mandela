@@ -1,0 +1,66 @@
+# Portfolio Design Language System (DLS)
+
+This document summarizes the visual identity and design tokens used for the "Dev & Product" portfolio.
+
+## Core Color Palette
+
+| Name | Hex Code | Usage |
+| :--- | :--- | :--- |
+| **Deep Background** | `#161616` | Main page background |
+| **Primary Text** | `#9A9A9A` | Default body text, muted icons |
+| **Highlight Text** | `#FaFaFa` | Headings, emphasized content |
+| **Borders / UI** | `#333333` | Component borders, separators |
+| **Surface** | `#1A1A1A` | Card backgrounds, terminal header |
+
+### Terminal Accents
+- **Close**: `#ff5f56`
+- **Minimize**: `#ffbd2e`
+- **Maximize**: `#27c93f`
+
+---
+
+## Typography
+
+- **Headings / Display**: `Outfit`
+  - Style: Bold, tracking-tight, often uppercase or italic for names.
+- **Terminal / Code**: `Monospace` (e.g., Courier Prime, JetBrains Mono, or system default)
+  - Usage: Command inputs, file listings, system stats.
+- **Body**: `Inter` or `Outfit` (Light weight)
+
+---
+
+## Interactive Elements
+
+### Buttons
+- **Primary**: Border `#9A9A9A`, Text `#9A9A9A`. 
+  - *Hover*: Background `#9A9A9A`, Text `#161616`.
+- **Secondary**: Background `#9A9A9A`, Text `#161616`.
+  - *Hover*: Transparent, Border `#9A9A9A`, Text `#9A9A9A`.
+
+### Sidebar/Navigation
+- **Active**: `#FaFaFa`
+- **Inactive**: `#9A9A9A` (Lower opacity)
+
+---
+
+## Dual-Mode Concept
+
+- **Normal Mode (Product Developer)**: 
+  - Emphasis on whitespace, large typography, and premium card layouts.
+  - Subtle gradients and blur effects (glassmorphism).
+- **Dev Mode (Terminal)**: 
+  - CRT scanline overlay (`linear-gradient` with low opacity).
+  - Monospace font dominance.
+  - Virtual Filesystem (VFS) interaction.
+
+---
+
+## Visual Effects (CRT Scanline CSS)
+```css
+background: 
+  linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+  linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+background-size: 100% 2px, 3px 100%;
+pointer-events: none;
+opacity: 0.03;
+```
