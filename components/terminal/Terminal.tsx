@@ -28,7 +28,7 @@ const vfs: Record<string, FileNode> = {
       "freelance.txt": { type: "file", content: "Full-Stack Freelancer (2023). Shipped multiple production SaaS platforms." }
     }
   },
-  "contact.txt": { type: "file", content: "Email: muhmmadali.nitrlk@gmail.com | Phone: +91 9682184658" },
+  "contact.txt": { type: "file", content: "Email: muhmmadali.nitrkl@gmail.com | Phone: +91 9682184658" },
   "README.md": { type: "file", content: "# Muhammad Ali OS\nRun 'help' to see available commands." }
 };
 
@@ -110,7 +110,7 @@ export default function Terminal() {
         output = "1. Multi-Tenant SaaS Development (FastAPI, Angular)\n2. AI Agent Integration & RAG Pipelines\n3. Scalable Backend Architecture (Node.js, Go)\n4. Production Cloud Deployment";
         break;
       case "hire":
-        output = "Let's build something exceptional.\nEmail: muhmmadali.nitrlk@gmail.com\nPhone/WA: +91 9682184658\nLocation: Bangalore / Worldwide";
+        output = "Let's build something exceptional.\nEmail: muhmmadali.nitrkl@gmail.com\nPhone/WA: +91 9682184658\nLocation: Bangalore / Worldwide";
         break;
       case "clear":
         setHistory([]);

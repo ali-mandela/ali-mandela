@@ -68,7 +68,7 @@ const jsonLd = {
   "jobTitle": "SaaS & AI Engineer",
   "url": "https://ali-mandela.dev",
   "sameAs": [
-    "https://github.com/alimandela",
+    "https://github.com/ali-mandela",
     "https://linkedin.com/in/alimandela"
   ],
   "knowsAbout": [

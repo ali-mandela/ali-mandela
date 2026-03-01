@@ -35,9 +35,9 @@ const navItems = [
 ];
 
 const socialItems = [
-  { icon: Github, href: "https://github.com/alimandela", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/alimandela", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@alimandela.dev", label: "Email" },
+  { icon: Github, href: "https://github.com/ali-mandela", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/muhammadali-01/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:muhammadali.nitrkl@gmail.com", label: "Email" },
 ];
 
 export default function Sidebar({ mode, toggleMode, isTransitioning }: SidebarProps) {
