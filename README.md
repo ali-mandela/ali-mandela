@@ -8,7 +8,7 @@
 
   <p>
     <a href="https://github.com/ali-mandela">GitHub</a> •
-    <a href="https://www.linkedin.com/in/muhammadali/">LinkedIn</a> •
+    <a href="https://www.linkedin.com/in/muhammadali-01/">LinkedIn</a> •
     <a href="https://ali-mandela.vercel.app/">Portfolio</a>
   </p>
 
