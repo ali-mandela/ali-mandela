@@ -1,36 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div>
+  <h1>Muhammad Ali</h1>
+  <h2>Full-Stack Software Engineer · SaaS & AI Systems</h2>
+  <p>
+    Product-focused Software Engineer building scalable multi-tenant SaaS platforms and AI-powered backend systems.
+    Experienced in FastAPI, Angular, Next.js, Go (Echo), MongoDB, and OpenAI integrations.
+  </p>
 
-## Getting Started
+  <p>
+    <a href="https://github.com/ali-mandela">GitHub</a> •
+    <a href="https://www.linkedin.com/in/muhammadali-01/">LinkedIn</a> •
+    <a href="https://ali-mandela.vercel.app/">Portfolio</a>
+  </p>
 
-First, run the development server:
+  <p>
+    📍 Kargil, Ladakh (Based in Bangalore) • 
+    📱 +91 9682184658 • 
+    📧 muhammadali.nitrkl@gmail.com
+  </p>
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div>
+  <h2>Technical Stack</h2>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  <p><strong>Frontend:</strong> Angular, React, Next.js, TypeScript, Tailwind CSS</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  <p><strong>Backend:</strong> FastAPI, Node.js, Go (Echo), REST API Design</p>
 
-## Learn More
+  <p><strong>Databases:</strong> MongoDB, PostgreSQL, Aggregation Pipelines</p>
 
-To learn more about Next.js, take a look at the following resources:
+  <p><strong>AI Systems:</strong> OpenAI APIs, RAG Pipelines, Custom AI Agents</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <p><strong>Infrastructure:</strong> Docker, Render, Vercel, Environment-Based Config</p>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+  <p><strong>Architecture:</strong> Multi-Tenant Systems, RBAC, JWT Authentication</p>
+</div>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div>
+  <h2>Experience</h2>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  <h3>Frontend Engineer | Shipthis (Mar 2024 — Present)</h3>
+  <ul>
+    <li>Developing production frontend systems while contributing to AI-driven backend features</li>
+    <li>Integrated LLM-based workflows using OpenAI APIs</li>
+    <li>Worked on Python API modules and RAG-based service integrations</li>
+    <li>Managed internal developer portal and package modules</li>
+  </ul>
+
+  <h3>Software Developer | TechWire Studio (Dec 2023 — Jul 2024)</h3>
+  <ul>
+    <li>Built scalable frontend systems using React, Next.js, and Tailwind</li>
+    <li>Optimized performance and implemented reusable UI architecture</li>
+    <li>Deployed applications using Vercel</li>
+  </ul>
+
+  <h3>Freelance Full-Stack Developer | Independent (Jul 2023 — Present)</h3>
+  <ul>
+    <li>Architected and deployed multi-tenant SaaS platform (Corely)</li>
+    <li>Built full-stack marketplaces and delivery systems</li>
+    <li>Designed secure backend APIs and managed production deployments</li>
+  </ul>
+
+  <h3>Junior Software Developer Intern | Skropay (Aug 2022 — Jan 2023)</h3>
+  <ul>
+    <li>Developed dynamic UI components using React Hooks and Context API</li>
+    <li>Assisted with backend integrations and deployment workflows</li>
+  </ul>
+</div>
+
+
+<div>
+  <h2>Key Projects</h2>
+
+  <h3>Corely – Multi-Tenant SaaS Platform</h3>
+  <p>FastAPI, Angular, MongoDB, Docker</p>
+  <ul>
+    <li>Designed shared-database multi-tenant architecture with tenant isolation</li>
+    <li>Implemented RBAC and secure JWT authentication</li>
+    <li>Deployed production-ready SaaS serving real customers</li>
+  </ul>
+
+  <h3>AI Agent & RAG System</h3>
+  <p>Python, OpenAI APIs, FastAPI</p>
+  <ul>
+    <li>Built custom RAG pipeline for context-aware responses</li>
+    <li>Developed modular AI agents for workflow automation</li>
+  </ul>
+
+  <h3>LaaRide – Taxi Booking Platform</h3>
+  <p>FastAPI, MongoDB</p>
+  <ul>
+    <li>Designed scalable backend architecture for region-focused booking system</li>
+    <li>Structured modular backend for long-term scalability</li>
+  </ul>
+
+  <h3>Rapid Foods – Multi-Role Delivery App</h3>
+  <p>React Native, Node.js, MongoDB</p>
+  <ul>
+    <li>Built Admin, Restaurant, User, and Delivery modules</li>
+    <li>Integrated secure payment and order lifecycle management</li>
+  </ul>
+
+  <h3>askLuxor – Real Estate Marketplace</h3>
+  <p>Node.js, Express, MongoDB</p>
+  <ul>
+    <li>Implemented role-based property management platform</li>
+    <li>Designed scalable backend services and cloud deployment</li>
+  </ul>
+</div>
+
+
+<div>
+  <h2>Education</h2>
+  <p>
+    <strong>B.Tech in Computer Science and Engineering</strong><br>
+    National Institute of Technology, Rourkela (2019 — 2023)
+  </p>
+</div>
+
+
+<div>
+  <h2>Additional</h2>
+  <ul>
+    <li>Building and shipping production-grade SaaS systems</li>
+    <li>Actively exploring advanced system design and AI engineering</li>
+    <li>Mentor at Ladakh Science Foundation</li>
+  </ul>
+</div>
