@@ -43,7 +43,7 @@ export default function Hero() {
           </button>
           
           <a 
-            href="https://github.com/alimandela"
+            href="https://github.com/ali-mandela"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center justify-center gap-3 px-8 py-4 border border-border-ui text-highlight-text rounded-full font-semibold transition-all hover:bg-white/5"
