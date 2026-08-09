@@ -8,16 +8,16 @@ import { cn } from "@/lib/utils";
 const experiences = [
   {
     type: "work",
-    role: "Frontend Engineer",
+    role: "Software Engineer",
     company: "Shipthis",
-    period: "Mar 2024 — Present",
-    description: "Working as a frontend engineer while contributing across AI systems, backend API modules, and internal developer tooling. Collaborating closely with backend teams to build AI-powered logistics features.",
+    period: "Mar 2025 — Present",
+    description: "Engineering developer platform infrastructure and LLM integrations — spanning multi-tenant SaaS, microservices, async APIs, and real-time systems.",
     achievements: [
-      "Integrated LLM-based features into production workflows",
-      "Developed and maintained Python API modules",
-      "Worked on AI-driven backend services and RAG integrations",
-      "Managed internal developer portal and package modules",
-      "Contributed across frontend and backend architecture"
+      "NL-to-report generator (96% accuracy)",
+      "Python SDK & developer platform infra",
+      "Shipthis Developer Portal + CI/CD",
+      "Magic Drop AI logistics optimization",
+      "EcoFreight carbon insights (Go + Next.js)"
     ],
     link: "https://shipthis.co"
   },
@@ -27,49 +27,49 @@ const experiences = [
     role: "Software Developer",
     company: "TechWire Studio",
     period: "Dec 2023 — Jul 2024",
-    description: "Built scalable frontend applications using React, Next.js, and Tailwind with focus on performance and clean UI architecture.",
+    description: "Sole developer on a real estate marketplace portal — owned full-stack architecture, REST API design, and deployments end-to-end using the MERN stack.",
     achievements: [
-      "Optimized frontend performance",
-      "Built reusable component systems",
-      "Deployed applications on Vercel"
+      "Modular MERN features (listings, search, users)",
+      "RBAC across Admin / Agent / User roles",
+      "2-week release cadence"
     ],
-    link: "https://example.com"
+    link: "https://askluxor.onrender.com"
   },
 
   {
     type: "work",
     role: "Freelance Full-Stack Developer",
     company: "Independent",
-    period: "Jul 2023 — Dec 2023",
-    description: "Architected and delivered full-stack systems including multi-tenant SaaS platforms, marketplaces, and backend-driven applications.",
+    period: "Jul 2023 — Jul 2024",
+    description: "Delivered 10+ full-stack web and mobile projects across e-commerce, CMS, food delivery, and academic assistance — from client requirements to production.",
     achievements: [
-      "Shipped multi-tenant SaaS (Corely)",
-      "Built scalable FastAPI backends",
-      "Managed end-to-end product lifecycle"
+      "Built FLN academic platform (100+ active users)",
+      "Real-time WebSocket chat & async tasks",
+      "10+ production projects shipped"
     ],
-    link: "https://example.com"
+    link: "https://github.com/ali-mandela"
   },
 
   {
     type: "work",
-    role: "Junior Software Developer Intern",
-    company: "Skropay",
+    role: "Software Developer Intern",
+    company: "Skropay Fintech",
     period: "Aug 2022 — Jan 2023",
-    description: "Developed React-based UI components and assisted in backend API integrations.",
+    description: "Built marketing websites and a reusable React component library for a fintech startup's early product development.",
     achievements: [
-      "Built dynamic React components",
-      "Improved deployment workflows",
-      "Collaborated in agile team"
+      "4 pixel-perfect marketing websites",
+      "Reusable React component library",
+      "Onboarding portal (300+ signups)"
     ],
-    link: "https://example.com"
+    link: "https://github.com/ali-mandela"
   },
 
   {
     type: "edu",
     role: "B.Tech in Computer Science and Engineering",
     company: "NIT Rourkela",
-    period: "2019 — Dec 2023",
-    description: "Focused on Data Structures, Algorithms, DBMS, and Computer Networks.",
+    period: "2019 — 2023",
+    description: "Focused on Data Structures, Algorithms, DBMS, Computer Networks, Operating Systems, and Discrete Mathematics.",
     achievements: [
       "Computer Science Graduate",
       "Strong foundation in core CS subjects"

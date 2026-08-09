@@ -13,9 +13,18 @@ const vfs: Record<string, FileNode> = {
   "projects": {
     type: "dir",
     children: {
+      "docbot.txt": { type: "file", content: "Project: DocBot. Multi-tenant AI support bot platform. FastAPI, LangChain, Qdrant, Celery/Redis, embeddable Lit widget." },
       "corely-saas.txt": { type: "file", content: "Project: Corely. Multi-tenant SaaS with FastAPI & Angular. Strict isolation & RBAC." },
+      "kclasses-fln.txt": { type: "file", content: "Project: K Classes (FLN). Academic assistance platform, live at flntutors.com. Angular/TS + Python, real-time WebSocket chat." },
+      "laaride.txt": { type: "file", content: "Project: LaaRide. Taxi-stand booking platform for Ladakh. FastAPI, MongoDB, Expo/React Native." },
+      "fluid-ai.txt": { type: "file", content: "Project: fluid.ai. Autonomous document-generation agent. FastAPI + LangGraph plan-execute-reflect-revise loop." },
+      "peanut-ai.txt": { type: "file", content: "Project: peanut_ai (RAGA Health Dashboard). B2B healthcare dashboard. React, TypeScript, Vite, Firebase." },
+      "fletnix.txt": { type: "file", content: "Project: Fletnix. Movie catalog & recommendation demo. Angular + Node.js/Express." },
+      "rategaurd.txt": { type: "file", content: "Project: rateGaurd. Python guarding/validation tool with a Streamlit dashboard." },
+      "eplatform.txt": { type: "file", content: "Project: ePlatform. Ecommerce platform. React/Vite storefront + JavaScript backend." },
+      "wassel.txt": { type: "file", content: "Project: Wassel. On-demand logistics for UAE. TypeScript/Expo + Python backend." },
+      "truereturn.txt": { type: "file", content: "Project: truereturn. Product return validation system. Under active development." },
       "ai-agents.txt": { type: "file", content: "Project: AI/RAG system. Custom Agent orchestration with OpenAI APIs." },
-      "fln-platform.txt": { type: "file", content: "Project: Academic expert platform. Scalable workflow management with MongoDB Aggregation." },
       "askluxor.txt": { type: "file", content: "Project: Real Estate Marketplace. Node.js, Express, MongoDB. Multi-role property listings." },
       "rapid-foods.txt": { type: "file", content: "Project: Multi-role delivery system. React Native, Node.js. Order lifecycle management." }
     }
@@ -23,12 +32,13 @@ const vfs: Record<string, FileNode> = {
   "experience": {
     type: "dir",
     children: {
-      "shipthis.txt": { type: "file", content: "Frontend Engineer @ Shipthis (2024-Present). AI Logistics & Internal Tooling." },
-      "techwire.txt": { type: "file", content: "Software Developer @ TechWire Studio (2023-2024). Next.js & React performance." },
-      "freelance.txt": { type: "file", content: "Full-Stack Freelancer (2023). Shipped multiple production SaaS platforms." }
+      "shipthis.txt": { type: "file", content: "Software Engineer @ Shipthis (Mar 2025-Present). Developer platform infra & LLM integrations." },
+      "techwire.txt": { type: "file", content: "Software Developer @ TechWire Studio (Dec 2023-Jul 2024). Sole dev, full-stack MERN, REST API design." },
+      "freelance.txt": { type: "file", content: "Freelance Full-Stack Developer (Jul 2023-Jul 2024). 10+ projects incl. FLN academic platform (100+ users)." },
+      "skropay.txt": { type: "file", content: "Software Developer Intern @ Skropay Fintech (Aug 2022-Jan 2023). Marketing sites, React component library, onboarding portal (300+ signups)." }
     }
   },
-  "contact.txt": { type: "file", content: "Email: muhmmadali.nitrkl@gmail.com | Phone: +91 9682184658" },
+  "contact.txt": { type: "file", content: "Email: muhammadali.nitrkl@gmail.com | Phone: +91 9682184658" },
   "README.md": { type: "file", content: "# Muhammad Ali OS\nRun 'help' to see available commands." }
 };
 
@@ -107,17 +117,17 @@ export default function Terminal() {
         output = "Muhammad Ali | SaaS & AI Engineer | Building Scalable Intelligence";
         break;
       case "services":
-        output = "1. Multi-Tenant SaaS Development (FastAPI, Angular)\n2. AI Agent Integration & RAG Pipelines\n3. Scalable Backend Architecture (Node.js, Go)\n4. Production Cloud Deployment";
+        output = "1. SaaS & MVP Development\n2. AI Integration & Automation\n3. Backend Architecture & API Development\n4. Frontend Engineering & Developer Tooling";
         break;
       case "hire":
-        output = "Let's build something exceptional.\nEmail: muhmmadali.nitrkl@gmail.com\nPhone/WA: +91 9682184658\nLocation: Bangalore / Worldwide";
+        output = "Let's build something exceptional.\nEmail: muhammadali.nitrkl@gmail.com\nPhone/WA: +91 9682184658\nLocation: Kargil, Leh & Ladakh / Bangalore / Remote";
         break;
       case "clear":
         setHistory([]);
         setInput("");
         return;
       case "skills":
-        output = "FastAPI, Angular, Next.js, MongoDB, Python, Go, Node.js, AI (OpenAI API, RAG), Docker";
+        output = "Python, TypeScript, JavaScript, FastAPI, Next.js, Angular, MongoDB, PostgreSQL, Redis, LangChain, RAG Pipelines, LLM Fine-Tuning (LoRA/Unsloth), Go, Docker, GitHub Actions, GCP, JWT, RBAC";
         break;
       case "hobbies":
         output = "NCC (National Cadet Corps), Football, Literature & Writing, Cyber Resilience";
@@ -137,9 +147,9 @@ export default function Terminal() {
     <div className="w-full h-[500px] md:h-[600px] bg-zinc-950/90 border border-zinc-800 rounded-xl md:rounded-2xl overflow-hidden flex flex-col font-mono shadow-2xl relative">
       <div className="px-4 py-2 md:py-3 bg-zinc-900 border-b border-zinc-800 flex items-center gap-2">
         <div className="flex gap-1.5">
-          <div className="w-2.5 h-2.5 md:w-3 h-3 rounded-full bg-red-500/80" />
-          <div className="w-2.5 h-2.5 md:w-3 h-3 rounded-full bg-yellow-500/80" />
-          <div className="w-2.5 h-2.5 md:w-3 h-3 rounded-full bg-green-500/80" />
+          <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-red-500/80" />
+          <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500/80" />
+          <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-green-500/80" />
         </div>
         <div className="flex-1 text-center text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest truncate">mandela_term — {currentPath.join("/") || "~"}</div>
       </div>

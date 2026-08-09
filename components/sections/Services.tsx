@@ -19,28 +19,28 @@ const services = [
     description: "Designing and building scalable full-stack SaaS applications using FastAPI, Angular/Next.js, and MongoDB with clean architecture and production-ready deployment.",
     icon: Rocket,
     price: "Project-Based",
-    link: "mailto:muhmmadali.nitrkl@gmail.com?subject=Inquiry: SaaS Development"
+    link: "mailto:muhammadali.nitrkl@gmail.com?subject=Inquiry: SaaS Development"
   },
   {
     title: "AI Integration & Automation",
     description: "Integrating OpenAI APIs, RAG pipelines, and custom AI agents into web applications to enable intelligent workflows and backend automation.",
     icon: Brain,
     price: "Custom Scope",
-    link: "mailto:muhmmadali.nitrkl@gmail.com?subject=Inquiry: AI Integration"
+    link: "mailto:muhammadali.nitrkl@gmail.com?subject=Inquiry: AI Integration"
   },
   {
     title: "Backend Architecture & API Development",
     description: "Building secure, scalable backend systems with FastAPI and Go (Echo), including multi-tenant architecture, RBAC, and production deployment.",
     icon: Code,
     price: "Project / Contract",
-    link: "mailto:muhmmadali.nitrkl@gmail.com?subject=Inquiry: Backend Development"
+    link: "mailto:muhammadali.nitrkl@gmail.com?subject=Inquiry: Backend Development"
   },
   {
     title: "Frontend Engineering & Developer Tooling",
     description: "Developing high-performance frontend systems in Angular and React, while contributing to internal developer portals and Python API modules.",
     icon: LayoutDashboard,
     price: "Contract-Based",
-    link: "mailto:muhmmadali.nitrkl@gmail.com?subject=Inquiry: Frontend Engineering"
+    link: "mailto:muhammadali.nitrkl@gmail.com?subject=Inquiry: Frontend Engineering"
   }
 ];
 
@@ -99,22 +99,22 @@ export default function Services() {
     </h2>
 
     <p className="text-primary-text text-lg font-light mb-4">
-      Product-focused Software Engineer building multi-tenant SaaS platforms and AI-powered backend systems using FastAPI, Angular, Next.js, and Go.
+      Product-focused Software Engineer building multi-tenant SaaS platforms and AI-powered backend systems using FastAPI, Angular, Next.js, and Go — available for remote and on-site engagements across Kargil, Leh & other regions of  Ladakh, and Bangalore.
     </p>
 
     <div className="flex items-center justify-center gap-3 text-sm text-zinc-500 mb-8">
-      <span>📍 Kargil, Ladakh</span>
+      <span>📍 Ladakh</span>
       <div className="w-1 h-1 rounded-full bg-highlight-text/40" />
       <span>Based in Bangalore</span>
     </div>
 
     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
       <a 
-        href="mailto:muhmmadali.nitrkl@gmail.com"
+        href="mailto:muhammadali.nitrkl@gmail.com"
         className="flex items-center gap-2 text-highlight-text hover:text-white transition-colors"
       >
         <MailIcon className="w-5 h-5" />
-        muhmmadali.nitrkl@gmail.com
+        muhammadali.nitrkl@gmail.com
       </a>
 
       <a 
@@ -138,7 +138,7 @@ export default function Services() {
 
     <div className="mt-10">
       <a 
-        href="mailto:muhmmadali.nitrkl@gmail.com"
+        href="mailto:muhammadali.nitrkl@gmail.com"
         className="inline-flex items-center gap-3 px-8 py-4 bg-highlight-text text-black rounded-full font-semibold transition-transform hover:scale-105 active:scale-95"
       >
         Start a Conversation

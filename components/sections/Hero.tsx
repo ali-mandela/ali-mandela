@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
 
         <p className="text-lg md:text-2xl text-primary-text max-w-2xl mb-12 leading-relaxed font-light">
-          Product-focused Software Engineer building <span className="text-highlight-text font-normal">scalable multi-tenant SaaS</span> platforms and  <span className="text-highlight-text font-normal">AI-powered systems</span>. Focused on clean architecture, intelligent automation, and production-grade engineering.
+          Product-focused Software Engineer building <span className="text-highlight-text font-normal">scalable multi-tenant SaaS</span> platforms and  <span className="text-highlight-text font-normal">AI-powered systems</span>  . Focused on clean architecture, intelligent automation, and production-grade engineering.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">

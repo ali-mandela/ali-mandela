@@ -18,14 +18,17 @@ const nodesByMode = {
     { id: "2", label: "Next.js", x: 600, y: 120, connections: ["1", "6"], link: "https://nextjs.org" },
     { id: "3", label: "Angular", x: 200, y: 120, connections: ["1", "6"], link: "https://angular.io" },
     { id: "4", label: "MongoDB", x: 250, y: 380, connections: ["1"], link: "https://www.mongodb.com" },
-    { id: "5", label: "PostgreSQL", x: 550, y: 380, connections: ["1"], link: "https://www.postgresql.org" },
+    { id: "5", label: "Redis", x: 550, y: 380, connections: ["1"], link: "https://redis.io" },
     { id: "6", label: "TypeScript", x: 400, y: 50, connections: ["2", "3"], link: "https://www.typescriptlang.org" },
     { id: "7", label: "Go", x: 750, y: 250, connections: ["10"], link: "https://go.dev" },
     { id: "8", label: "AI / LLM (OpenAI)", x: 650, y: 450, connections: ["1", "11"], link: "https://platform.openai.com" },
     { id: "9", label: "Python", x: 200, y: 250, connections: ["1", "8"], link: "https://www.python.org" },
     { id: "10", label: "Echo (Go)", x: 850, y: 300, connections: ["7"], link: "https://echo.labstack.com" },
-    { id: "11", label: "RAG & Custom Agents", x: 450, y: 500, connections: ["8"], link: "https://en.wikipedia.org/wiki/Retrieval-augmented_generation" },
-    { id: "12", label: "Docker", x: 750, y: 100, connections: ["1", "7"], link: "https://www.docker.com" }
+    { id: "11", label: "RAG & Custom Agents", x: 450, y: 500, connections: ["8", "13"], link: "https://en.wikipedia.org/wiki/Retrieval-augmented_generation" },
+    { id: "12", label: "Docker", x: 750, y: 100, connections: ["1", "7"], link: "https://www.docker.com" },
+    { id: "13", label: "LangChain", x: 550, y: 500, connections: ["11"], link: "https://www.langchain.com" },
+    { id: "14", label: "GitHub Actions", x: 820, y: 170, connections: ["12"], link: "https://github.com/features/actions" },
+    { id: "15", label: "PostgreSQL", x: 350, y: 340, connections: ["1"], link: "https://www.postgresql.org" }
   ],
 
   dev: [

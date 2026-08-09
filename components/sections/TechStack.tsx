@@ -2,52 +2,50 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Database, 
-  Cloud, 
-  Layers, 
-  Monitor, 
-  ShieldCheck, 
-  BrainCircuit, 
-  Terminal, 
-  GitBranch 
+import {
+  Database,
+  Layers,
+  ShieldCheck,
+  BrainCircuit,
+  Terminal,
+  GitBranch
 } from "lucide-react";
 
 const stack = [
-  { 
-    name: "Frontend", 
-    items: ["Angular", "React", "Next.js", "TypeScript", "Tailwind"], 
-    icon: Monitor 
+  {
+    name: "Languages",
+    items: ["Python", "TypeScript", "JavaScript"],
+    icon: Terminal
   },
 
-  { 
-    name: "Backend", 
-    items: ["FastAPI", "Node.js", "Go (Echo)", "REST APIs"], 
-    icon: Layers 
+  {
+    name: "AI & LLM",
+    items: ["OpenAI APIs", "LangChain", "RAG Pipelines", "LLM Fine-Tuning (LoRA/Unsloth)", "Custom AI Agents", "Prompt Engineering"],
+    icon: BrainCircuit
   },
 
-  { 
-    name: "Data", 
-    items: ["MongoDB", "PostgreSQL", "Aggregation Pipelines", "Tenant-Scoped Queries"], 
-    icon: Database 
+  {
+    name: "Frameworks",
+    items: ["FastAPI", "Next.js", "Angular", "Tailwind CSS", "Lit"],
+    icon: Layers
   },
 
-  { 
-    name: "Infra", 
-    items: ["Docker", "Render", "Vercel", "Environment-Based Config"], 
-    icon: Cloud 
+  {
+    name: "Databases",
+    items: ["MongoDB", "PostgreSQL", "Redis", "Aggregation Pipelines", "Query Optimization"],
+    icon: Database
   },
 
-  { 
-    name: "AI Systems", 
-    items: ["OpenAI APIs", "RAG Pipelines", "Custom Agents", "Prompt Engineering"], 
-    icon: BrainCircuit 
+  {
+    name: "Architecture",
+    items: ["REST API Design", "Microservices", "Distributed Systems", "Multi-Tenant Systems", "Async APIs", "WebSockets"],
+    icon: ShieldCheck
   },
 
-  { 
-    name: "Security & Architecture", 
-    items: ["JWT Authentication", "RBAC", "Multi-Tenant Isolation", "API Design"], 
-    icon: ShieldCheck 
+  {
+    name: "DevOps & Tools",
+    items: ["Docker", "GitHub Actions", "CI/CD", "GCP", "Git", "JWT", "RBAC"],
+    icon: GitBranch
   }
 ];
 
