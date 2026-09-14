@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {
   Database,
   Layers,
-  ShieldCheck,
+  Server,
   BrainCircuit,
   Terminal,
   GitBranch
@@ -14,37 +14,37 @@ import {
 const stack = [
   {
     name: "Languages",
-    items: ["Python", "TypeScript", "JavaScript"],
+    items: ["Python", "TypeScript", "JavaScript", "Go", "SQL"],
     icon: Terminal
   },
 
   {
-    name: "AI & LLM",
-    items: ["OpenAI APIs", "LangChain", "RAG Pipelines", "LLM Fine-Tuning (LoRA/Unsloth)", "Custom AI Agents", "Prompt Engineering"],
-    icon: BrainCircuit
+    name: "Backend",
+    items: ["FastAPI", "Node.js", "Express.js", "Echo (Go)", "REST APIs", "WebSockets", "Server-Sent Events", "Celery", "JWT / Google OAuth"],
+    icon: Server
   },
 
   {
-    name: "Frameworks",
-    items: ["FastAPI", "Next.js", "Angular", "Tailwind CSS", "Lit"],
+    name: "Frontend",
+    items: ["React", "Next.js", "Angular", "Lit / Web Components", "Redux Toolkit", "Tailwind CSS", "React Native", "Expo"],
     icon: Layers
   },
 
   {
-    name: "Databases",
-    items: ["MongoDB", "PostgreSQL", "Redis", "Aggregation Pipelines", "Query Optimization"],
+    name: "AI & LLM",
+    items: ["LangChain", "LangGraph", "RAG Pipelines", "OpenAI API", "Groq", "Hugging Face", "LLM Fine-Tuning (LoRA / Unsloth)", "AI Agents", "Prompt Engineering"],
+    icon: BrainCircuit
+  },
+
+  {
+    name: "Data & Messaging",
+    items: ["MongoDB", "PostgreSQL", "Redis", "Qdrant", "Firebase", "RabbitMQ", "Query Optimization"],
     icon: Database
   },
 
   {
-    name: "Architecture",
-    items: ["REST API Design", "Microservices", "Distributed Systems", "Multi-Tenant Systems", "Async APIs", "WebSockets"],
-    icon: ShieldCheck
-  },
-
-  {
-    name: "DevOps & Tools",
-    items: ["Docker", "GitHub Actions", "CI/CD", "GCP", "Git", "JWT", "RBAC"],
+    name: "Cloud, DevOps & Testing",
+    items: ["AWS (EC2, SES, SNS)", "GCP", "Docker", "Nginx", "GitHub Actions", "CI/CD", "Prometheus", "Grafana", "Pytest", "Jest"],
     icon: GitBranch
   }
 ];
@@ -73,8 +73,8 @@ export default function TechStack() {
 
           <div className="flex flex-wrap gap-2">
             {category.items.map(item => (
-              <span 
-                key={item} 
+              <span
+                key={item}
                 className="text-[10px] px-3 py-1 bg-white/5 border border-white/10 rounded-full text-zinc-400 group-hover:text-highlight-text group-hover:bg-white/10 transition-colors font-mono uppercase tracking-widest"
               >
                 {item}

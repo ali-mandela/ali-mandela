@@ -104,9 +104,15 @@ const personLd = {
       "addressCountry": "IN",
     },
   },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "National Institute of Technology Rourkela",
+  },
   "sameAs": [
     "https://github.com/ali-mandela",
-    "https://linkedin.com/in/alimandela"
+    "https://www.linkedin.com/in/muhammadali-01/",
+    "https://huggingface.co/alimandela",
+    "https://leetcode.com/u/am__/"
   ],
   "knowsAbout": [
     "Software Engineering",

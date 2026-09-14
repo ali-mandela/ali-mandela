@@ -6,6 +6,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-amdak.in-58A6FF?style=for-the-badge&logo=vercel&logoColor=white)](https://www.amdak.in)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Ali-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammadali-01/)
+[![Hugging Face](https://img.shields.io/badge/Hugging_Face-alimandela-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/alimandela)
 [![Email](https://img.shields.io/badge/Email-muhammadali.nitrkl%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muhammadali.nitrkl@gmail.com)
 [![Location](https://img.shields.io/badge/Based_in-Bengaluru%2C_India-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 
@@ -21,22 +22,22 @@
 ```python
 class MuhammadAli:
     def __init__(self):
-        self.role       = "Software Engineer (Frontend/Platform)"
+        self.role       = "Software Engineer"
         self.company    = "Shipthis"
-        self.experience = "2+ years"
-        self.stack      = ["Python", "FastAPI", "TypeScript", "Angular", "Go"]
-        self.focus      = ["AI/LLM Systems", "Multi-tenant SaaS", "Developer Platforms"]
-        self.currently_building = "Developer portals, LLM-powered agents, and async APIs at scale"
+        self.experience = "3+ years"
+        self.stack      = ["Python", "FastAPI", "TypeScript", "React", "Angular", "Node.js", "Go"]
+        self.focus      = ["AI/LLM Systems", "Backend Services", "Developer Platforms", "Full-Stack Products"]
+        self.currently_building = "LLM-powered reporting, AI document workflows, and developer platform SDKs"
 
     def say_hi(self):
         return "Let's build something that ships. 🚀"
 ```
 
-I'm a Software Engineer with **2+ years** building scalable backend systems and AI-powered workflows. I currently engineer **developer platform infrastructure and LLM integrations** at **Shipthis** — spanning multi-tenant SaaS, microservices, async APIs, and real-time systems. I've shipped production systems across **fintech, logistics, and edtech**, each with quantified performance and scale impact.
+I'm a Software Engineer with **3+ years** of experience building backend services, full-stack web applications, and production **AI/LLM workflows** with Python, FastAPI, TypeScript, React, Angular, and Node.js. At **Shipthis** I build LLM-powered reporting, AI document workflows, and developer platform SDKs for logistics products, with earlier work across **real estate, edtech, and fintech**.
 
-- 🔭 Currently building: SDKs, developer portals & LLM-driven automation at **Shipthis**
-- 🧠 Deep in: RAG pipelines, LoRA fine-tuning, and multi-agent workflows
-- 🌱 Always learning: distributed systems & AI infra at scale
+- 🔭 Currently building: LLM features, SDKs & a developer portal at **Shipthis**
+- 🏆 Team Lead, **Bessemer Tech Catalyst Hackathon** semi-finalist (team Amdak) with [aivar](https://github.com/ali-mandela/aivar), a self-healing E2E testing agent
+- 🧠 Deep in: RAG pipelines, LoRA fine-tuning, and agentic workflows
 - 🎖️ Ex-NCC Cadet Captain, NIT Rourkela — turns out leading formations and leading sprints aren't so different
 - 📫 Reach me: **muhammadali.nitrkl@gmail.com**
 
@@ -53,9 +54,9 @@ I'm a Software Engineer with **2+ years** building scalable backend systems and 
 | Documents processed weekly (Magic Drop) | **~4,000 / week** |
 | Shipments tracked weekly (EcoFreight) | **~40,000 / week** |
 | Fine-tuned LLM training loss (Gemma 3 + LoRA) | **4.21 → 1.19** avg |
-| Freelance projects shipped to production | **10+** |
-| Portfolio site visitors | **1,000+** |
-| FLN platform active users | **100+** |
+| DocBot platform | **27** REST endpoints · **9** containerized services |
+| FLN Tutors platform reach | **10,000+** visitors · **500+** active users |
+| Pre-launch onboarding signups (Skropay) | **300+** |
 
 </div>
 
@@ -71,33 +72,37 @@ I'm a Software Engineer with **2+ years** building scalable backend systems and 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 **AI / LLM**
 <br/>
-![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![RAG](https://img.shields.io/badge/RAG_Pipelines-6C3483?style=for-the-badge&logo=vectorworks&logoColor=white)
 ![LoRA](https://img.shields.io/badge/LoRA_/_Unsloth_Fine--Tuning-FF6F00?style=for-the-badge&logo=fireship&logoColor=white)
 
-**Frameworks**
+**Backend & Frontend**
 <br/>
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Lit](https://img.shields.io/badge/Lit-324FFF?style=for-the-badge&logo=lit&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 **Data & Infra**
 <br/>
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
 </div>
 
@@ -159,40 +164,39 @@ I'm a Software Engineer with **2+ years** building scalable backend systems and 
 ## 💼 Experience
 
 <details open>
-<summary><strong>🟢 Software Engineer (Frontend / Platform) — Shipthis</strong> · Mar 2025 – Present</summary>
+<summary><strong>🟢 Software Engineer — Shipthis</strong> · Mar 2025 – Present</summary>
 <br/>
 
-`Angular` `Python` `Go` `TypeScript` `Docker` `AI/LLM`
+`Python` `FastAPI` `TypeScript` `Angular` `Lit` `Go` `Next.js` `Docker` `GitHub Actions` `LLM`
 
-- Built an **NL-to-report generator** (LLM-based query parsing), cutting report creation from hours to **under 1 minute at 96% accuracy**
-- Designed and own core **developer platform infrastructure**: Python SDK, JavaScript API package, and Lit-based Web Components — now powering **3 internal services**, rolling out to all client integrations
-- Built and launched the **Shipthis Developer Portal**, consolidating SDK docs, developer tooling, and partner integration guides, with automated CI/CD via GitHub Actions
-- Optimised **Magic Drop**, an AI-powered logistics workflow (document generation, vendor rate intelligence, CSV parsing), processing **~4,000 documents/week** while cutting LLM token usage by **~73%**
-- Contributed to **EcoFreight** (Go + Next.js), exposing shipment carbon emission insights across **~40,000 shipments/week**
-- Built **Custom Templates**, a user-facing feature for reusable document and shipment templates
+- Built an **LLM-powered natural language to report generator** that turns free-form queries into structured reports, cutting report generation from hours to **under 1 minute at 96% query accuracy**
+- Owned **developer platform infrastructure**: a Python SDK, JavaScript API package, and Lit Web Components library powering **3 internal services**, with rollout underway across client integrations
+- Built and launched the **Shipthis Developer Portal**, centralizing SDK documentation, developer tooling, and partner integration guides, with automated CI/CD via GitHub Actions
+- Optimized **Magic Drop**, an AI-powered logistics workflow (document generation, vendor rate intelligence, CSV parsing), processing **~4,000 documents/week** while reducing LLM token usage by **~73%**
+- Contributed to **EcoFreight** (Go + Next.js), delivering shipment carbon emission insights across **~40,000 shipments/week**
+- Built **Custom Templates**, a reusable document and shipment templating feature that reduced repetitive data entry
 
 </details>
 
 <details>
-<summary><strong>🔵 Software Developer — TechWire Studio</strong> · Dec 2023 – Jul 2024</summary>
+<summary><strong>🔵 Software Developer — TechWire Studio</strong> · Apr 2024 – Jan 2025</summary>
 <br/>
 
-`Next.js` `Node.js` `Express` `MongoDB` `React` `Tailwind` `Git`
+`React` `Vite` `Redux Toolkit` `Node.js` `Express` `MongoDB` `JWT`
 
-- Sole developer on a real estate marketplace portal — owned full-stack architecture, REST API design, and deployments end-to-end
-- Built modular MERN stack features across property listing, search, and user management on a **2-week release cadence**
-- Implemented RBAC across Admin, Agent, and User roles with scoped dashboards and permission-gated API routes
+- Sole developer on **AskLuxor**, a real estate marketplace — owned the full stack: a Node.js/Express REST API with MongoDB and JWT authentication, and a React/Vite frontend with Redux Toolkit, deployed end-to-end
+- Built role-based Admin, Agent, and public portals with token-based protected routing, property and agent search and filtering, and a protected agent dashboard, shipped on a **2-week release cadence**
 
 </details>
 
 <details>
-<summary><strong>🟣 Freelance Full-Stack Developer — Independent</strong> · Jul 2023 – Jul 2024</summary>
+<summary><strong>🟣 Software Developer — Dr. Khan Classes Pvt. Ltd.</strong> · Jun 2023 – Apr 2024</summary>
 <br/>
 
-`React` `React Native` `Node.js` `MongoDB` `MySQL` `Firebase`
+`Node.js` `Express` `Python` `MongoDB` `Firebase`
 
-- Independently delivered **10+ full-stack web and mobile projects** across e-commerce, CMS, food delivery, and academic assistance — portfolio site drew **1,000+ visitors**
-- Built **FLN**, an academic assistance platform with real-time WebSocket chat, async task handling, and role-based dashboards — live with **100+ active users**
+- Delivered full-stack client applications, including **Pragathi** (e-commerce), a job portal, and **Pvt Classes**, from requirements gathering through production deployment
+- Built domain-specific tools, including an AI chatbot, a doctor management platform, and a digital library system
 
 </details>
 
@@ -202,7 +206,7 @@ I'm a Software Engineer with **2+ years** building scalable backend systems and 
 
 `JavaScript` `React` `Node.js` `SQL`
 
-- Built 4 pixel-perfect marketing websites and a reusable React component library (hooks, React Router, Context API)
+- Built 4 pixel-perfect marketing websites and a reusable React component library (Hooks, React Router, Context API)
 - Developed a pre-launch onboarding portal with email-based registration, handling **300+ signups**
 
 </details>
@@ -215,39 +219,81 @@ I'm a Software Engineer with **2+ years** building scalable backend systems and 
 <tr>
 <td width="33%" valign="top">
 
-**🤖 DocBot**
+**🤖 [DocBot](https://github.com/ali-mandela/docbot)**
 <br/>
 Multi-Tenant AI Support Bot Platform
 
-`FastAPI` `LangChain` `Groq` `Qdrant` `Celery` `Redis`
+`FastAPI` `LangChain` `Groq` `Qdrant` `Celery` `RabbitMQ` `Lit`
 
-Multi-tenant RAG pipeline with namespaced vector collections, async ingestion (Celery + Redis), and an embeddable Lit widget with token-by-token streaming.
+Multi-tenant RAG with per-tenant Qdrant collections, SSE streaming, async PDF/DOCX/TXT ingestion, an embeddable Lit widget, and 9 Dockerized services.
 
 </td>
 <td width="33%" valign="top">
 
-**🏢 Corely**
+**🧪 [aivar](https://github.com/ali-mandela/aivar)**
 <br/>
-Multi-Tenant SaaS Platform
+Autonomous Test Generation Agent · 🏆 Hackathon semi-finalist
 
-`FastAPI` `Angular` `MongoDB` `JWT` `RBAC`
+`Python` `FastAPI` `Playwright` `Pytest` `React`
 
-Per-tenant DB namespacing, JWT auth, and an API gateway, with modular services (inventory, billing, reporting) and zero cross-tenant data leakage.
+Explores a web app from just a URL and login, then generates, runs, and self-heals Playwright E2E tests via an 8-stage orchestrator with cross-provider LLM failover.
 
 </td>
 <td width="33%" valign="top">
 
-**📦 Logistics Data Extractor**
+**📦 [Logistics Data Extractor](https://huggingface.co/spaces/alimandela/freight-note-parser)**
 <br/>
 Fine-Tuned LLM & Deployment
 
-`Unsloth` `LoRA` `Gradio` `PyTorch`
+`Unsloth` `LoRA` `PyTorch` `Gradio`
 
 Fine-tuned Gemma 3 (270M) via LoRA to extract structured JSON from unstructured logistics notes — training loss **4.21 → 1.19**, deployed live on Hugging Face Spaces.
 
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top">
+
+**🏢 [Corely](https://corely-six.vercel.app/)**
+<br/>
+Multi-Tenant SaaS Platform
+
+`FastAPI` `Angular` `MongoDB` `Docker` `JWT` `RBAC`
+
+Per-tenant DB namespacing, JWT auth, and an API gateway, with modular inventory, billing, and reporting services and zero cross-tenant data leakage.
+
+</td>
+<td width="33%" valign="top">
+
+**🎓 [FLN Tutors](https://www.flntutors.com/)**
+<br/>
+Academic Assistance Platform
+
+`FastAPI` `Next.js` `WebSockets` `MongoDB` `AWS`
+
+Real-time WebSocket chat and role-based dashboards connecting students with domain experts — **10,000+ visitors**, **500+ active users**.
+
+</td>
+<td width="33%" valign="top">
+
+**📝 [fluid.ai](https://github.com/ali-mandela/fluid.ai)**
+<br/>
+Autonomous Document Generation Agent
+
+`FastAPI` `LangGraph` `Groq` `SSE`
+
+A LangGraph agent that plans, drafts, critiques, and revises business documents, returning a polished .docx with live step streaming.
+
+</td>
+</tr>
 </table>
+
+<br/>
+
+## 🥇 Hackathons
+
+- **Team Lead · Semi-finalist — Bessemer Tech Catalyst Hackathon** (Sep 2026)
+  Organized by Bessemer Venture Partners India and Polaris School of Technology. Led team **Amdak** (4 members) with [aivar](https://github.com/ali-mandela/aivar), built for a problem statement by **Aivar Innovations**.
 
 <br/>
 

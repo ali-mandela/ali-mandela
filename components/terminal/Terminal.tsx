@@ -13,32 +13,34 @@ const vfs: Record<string, FileNode> = {
   "projects": {
     type: "dir",
     children: {
-      "docbot.txt": { type: "file", content: "Project: DocBot. Multi-tenant AI support bot platform. FastAPI, LangChain, Qdrant, Celery/Redis, embeddable Lit widget." },
-      "corely-saas.txt": { type: "file", content: "Project: Corely. Multi-tenant SaaS with FastAPI & Angular. Strict isolation & RBAC." },
-      "kclasses-fln.txt": { type: "file", content: "Project: K Classes (FLN). Academic assistance platform, live at flntutors.com. Angular/TS + Python, real-time WebSocket chat." },
-      "laaride.txt": { type: "file", content: "Project: LaaRide. Taxi-stand booking platform for Ladakh. FastAPI, MongoDB, Expo/React Native." },
-      "fluid-ai.txt": { type: "file", content: "Project: fluid.ai. Autonomous document-generation agent. FastAPI + LangGraph plan-execute-reflect-revise loop." },
-      "peanut-ai.txt": { type: "file", content: "Project: peanut_ai (RAGA Health Dashboard). B2B healthcare dashboard. React, TypeScript, Vite, Firebase." },
-      "fletnix.txt": { type: "file", content: "Project: Fletnix. Movie catalog & recommendation demo. Angular + Node.js/Express." },
-      "rategaurd.txt": { type: "file", content: "Project: rateGaurd. Python guarding/validation tool with a Streamlit dashboard." },
-      "eplatform.txt": { type: "file", content: "Project: ePlatform. Ecommerce platform. React/Vite storefront + JavaScript backend." },
+      "docbot.txt": { type: "file", content: "Project: DocBot. Multi-tenant RAG support bot platform. FastAPI, LangChain, Groq, Qdrant, Celery/RabbitMQ ingestion, embeddable Lit widget. 27 REST endpoints, 9 containerized services." },
+      "aivar.txt": { type: "file", content: "Project: aivar. Autonomous test generation agent — explores a web app and generates, runs, and self-heals Playwright E2E tests. Bessemer Tech Catalyst Hackathon semi-finalist (Team Lead, team Amdak of 4)." },
+      "logistics-extractor.txt": { type: "file", content: "Project: Logistics Data Extractor. Gemma 3 (270M) fine-tuned with LoRA/Unsloth to extract JSON from logistics notes. Training loss 4.21 -> 1.19. Live on Hugging Face Spaces." },
+      "corely-saas.txt": { type: "file", content: "Project: Corely. Multi-tenant SaaS with FastAPI & Angular. Per-tenant DB namespacing, JWT, RBAC, inventory/billing/reporting services." },
+      "fln-tutors.txt": { type: "file", content: "Project: FLN Tutors. Academic assistance platform, live at flntutors.com. FastAPI, Next.js, WebSockets, MongoDB, Redis, AWS. 10,000+ visitors, 500+ active users." },
+      "fluid-ai.txt": { type: "file", content: "Project: fluid.ai. Autonomous document-generation agent. FastAPI + LangGraph plan-draft-critique-revise loop, .docx output." },
+      "laaride.txt": { type: "file", content: "Project: LaaRide (in progress). Taxi-stand booking platform for Ladakh. FastAPI, MongoDB, React Native/Expo." },
+      "raga-health.txt": { type: "file", content: "Project: RAGA Health Dashboard (peanut_ai). B2B healthcare dashboard. React, TypeScript, Vite, Zustand, Firebase." },
+      "fletnix.txt": { type: "file", content: "Project: Fletnix. Movie catalog & recommendation demo. Angular 19 + Node.js/MongoDB, JWT auth." },
+      "rategaurd.txt": { type: "file", content: "Project: rateGaurd. Python rate guarding/validation tool with a Streamlit dashboard." },
+      "eplatform.txt": { type: "file", content: "Project: ePlatform. Ecommerce platform. React/Vite storefront + backend services." },
       "wassel.txt": { type: "file", content: "Project: Wassel. On-demand logistics for UAE. TypeScript/Expo + Python backend." },
       "truereturn.txt": { type: "file", content: "Project: truereturn. Product return validation system. Under active development." },
-      "ai-agents.txt": { type: "file", content: "Project: AI/RAG system. Custom Agent orchestration with OpenAI APIs." },
-      "askluxor.txt": { type: "file", content: "Project: Real Estate Marketplace. Node.js, Express, MongoDB. Multi-role property listings." },
-      "rapid-foods.txt": { type: "file", content: "Project: Multi-role delivery system. React Native, Node.js. Order lifecycle management." }
+      "ai-agents.txt": { type: "file", content: "Project: AI Agent & RAG System. OpenAI APIs with custom RAG pipelines." },
+      "rapid-foods.txt": { type: "file", content: "Project: Rapid Foods. Multi-role delivery app. React Native, Node.js, MongoDB." }
     }
   },
   "experience": {
     type: "dir",
     children: {
-      "shipthis.txt": { type: "file", content: "Software Engineer @ Shipthis (Mar 2025-Present). Developer platform infra & LLM integrations." },
-      "techwire.txt": { type: "file", content: "Software Developer @ TechWire Studio (Dec 2023-Jul 2024). Sole dev, full-stack MERN, REST API design." },
-      "freelance.txt": { type: "file", content: "Freelance Full-Stack Developer (Jul 2023-Jul 2024). 10+ projects incl. FLN academic platform (100+ users)." },
-      "skropay.txt": { type: "file", content: "Software Developer Intern @ Skropay Fintech (Aug 2022-Jan 2023). Marketing sites, React component library, onboarding portal (300+ signups)." }
+      "shipthis.txt": { type: "file", content: "Software Engineer @ Shipthis (Mar 2025-Present). LLM-powered reporting (<1 min, 96% accuracy), Magic Drop (~4K docs/week, ~73% fewer tokens), Python SDK & Developer Portal, EcoFreight (Go + Next.js)." },
+      "techwire.txt": { type: "file", content: "Software Developer @ TechWire Studio (Apr 2024-Jan 2025). Sole developer on AskLuxor real estate marketplace — Node.js/Express, MongoDB, React/Vite, Redux Toolkit." },
+      "dr-khan-classes.txt": { type: "file", content: "Software Developer @ Dr. Khan Classes Pvt. Ltd. (Jun 2023-Apr 2024). Full-stack client applications and domain tools — Node.js, Express, Python, MongoDB, Firebase." },
+      "skropay.txt": { type: "file", content: "Software Developer Intern @ Skropay Fintech (Aug 2022-Jan 2023). Marketing sites, React component library, onboarding portal (300+ signups)." },
+      "hackathon.txt": { type: "file", content: "Team Lead @ Bessemer Tech Catalyst Hackathon (Sep 2026). Semi-finalist with aivar, team Amdak of 4, problem statement by Aivar Innovations." }
     }
   },
-  "contact.txt": { type: "file", content: "Email: muhammadali.nitrkl@gmail.com | Phone: +91 9682184658" },
+  "contact.txt": { type: "file", content: "Email: muhammadali.nitrkl@gmail.com | Phone: +91 9682184658 | LinkedIn: linkedin.com/in/muhammadali-01 | GitHub: github.com/ali-mandela" },
   "README.md": { type: "file", content: "# Muhammad Ali OS\nRun 'help' to see available commands." }
 };
 
@@ -114,7 +116,7 @@ export default function Terminal() {
         output = "/" + currentPath.join("/");
         break;
       case "whoami":
-        output = "Muhammad Ali | SaaS & AI Engineer | Building Scalable Intelligence";
+        output = "Muhammad Ali | Software Engineer (3+ years) | Backend, Full-Stack & AI/LLM | NIT Rourkela '23";
         break;
       case "services":
         output = "1. SaaS & MVP Development\n2. AI Integration & Automation\n3. Backend Architecture & API Development\n4. Frontend Engineering & Developer Tooling";
@@ -127,7 +129,7 @@ export default function Terminal() {
         setInput("");
         return;
       case "skills":
-        output = "Python, TypeScript, JavaScript, FastAPI, Next.js, Angular, MongoDB, PostgreSQL, Redis, LangChain, RAG Pipelines, LLM Fine-Tuning (LoRA/Unsloth), Go, Docker, GitHub Actions, GCP, JWT, RBAC";
+        output = "Languages: Python, TypeScript, JavaScript, Go, SQL\nBackend: FastAPI, Node.js, Express.js, Echo (Go), WebSockets, SSE, Celery\nFrontend: React, Next.js, Angular, Lit, Redux Toolkit, Tailwind CSS, React Native\nAI/LLM: LangChain, LangGraph, RAG, OpenAI API, Groq, Hugging Face, LoRA/Unsloth fine-tuning\nData: MongoDB, PostgreSQL, Redis, Qdrant, Firebase, RabbitMQ\nCloud/DevOps: AWS, GCP, Docker, Nginx, GitHub Actions, Prometheus, Grafana, Pytest, Jest";
         break;
       case "hobbies":
         output = "NCC (National Cadet Corps), Football, Literature & Writing, Cyber Resilience";

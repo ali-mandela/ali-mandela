@@ -16,6 +16,8 @@ import {
   RotateCcw,
   Cpu,
   Zap,
+  Trophy,
+  Package,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -28,85 +30,147 @@ const projects = [
     title: "DocBot – Multi-Tenant AI Support Bot Platform",
     icon: Bot,
     category: "AI/ML",
-    description: "Multi-tenant RAG platform for AI support bots, with full per-tenant data isolation and an embeddable streaming widget.",
-    longDescription: "Architected a multi-tenant RAG pipeline using LangChain, HuggingFace embeddings, and Qdrant vector DB, with per-tenant namespaced collections for full data isolation. Built an async ingestion pipeline for PDF, DOCX, and TXT files, plus an embeddable Lit widget with token-by-token streaming, deployable via a single script tag.",
+    description: "Multi-tenant SaaS platform that lets companies launch an AI support chatbot trained on their own documents, embeddable on any website.",
+    longDescription: "A multi-tenant Retrieval-Augmented Generation (RAG) support bot platform built with FastAPI, LangChain, and Groq (Llama 3.1 8B), streaming answers over Server-Sent Events with per-tenant Qdrant collections and conversation history in MongoDB. Runs locally via Docker Compose.",
     techDetails: [
-      "Per-tenant namespaced collections in Qdrant for strict data isolation.",
-      "Async ingestion pipeline (Celery + Redis) for PDF, DOCX, and TXT files.",
-      "HuggingFace embeddings feeding a LangChain RAG pipeline.",
-      "Embeddable Lit widget with token-by-token streaming via a single script tag.",
-      "FastAPI backend, Next.js dashboard."
+      "Per-tenant Qdrant collections for data isolation, with conversation history in MongoDB.",
+      "Async ingestion pipeline with Celery and RabbitMQ that parses PDF, DOCX, and TXT files from Backblaze B2, chunks text with configurable per-tenant size and overlap, and generates BAAI/bge-small-en-v1.5 embeddings with FastEmbed, retrying failures with exponential backoff.",
+      "Embeddable Lit Web Component chat widget with token-by-token streaming, installable with a single script tag.",
+      "JWT and Google OAuth authentication, owner-based role access, team invites, tenant API keys, per-plan Redis rate limiting, and encrypted bring-your-own MongoDB storage across 27 REST API endpoints.",
+      "9 services containerized with Docker Compose (API, worker, MongoDB, Qdrant, RabbitMQ, Nginx, Flower, Prometheus, Grafana) with structured logging and Prometheus metrics."
     ],
     outcomes: [
-      "Full tenant data isolation",
-      "Drop-in embeddable widget",
-      "Streaming, low-latency responses"
+      "27 REST API endpoints",
+      "9 containerized services",
+      "Per-tenant data isolation",
+      "Token-by-token streaming widget"
     ],
-    tags: ["FastAPI", "LangChain", "Qdrant", "Celery", "Redis", "Lit"],
+    tags: ["FastAPI", "LangChain", "Groq", "Qdrant", "Celery", "RabbitMQ", "Lit"],
     color: "text-purple-400",
-    link: "https://github.com/ali-mandela"
+    link: "https://github.com/ali-mandela/docbot"
+  },
+
+  {
+    title: "aivar – Autonomous Test Generation Agent",
+    icon: Trophy,
+    category: "AI/ML",
+    description: "Hackathon semi-finalist: an AI agent that takes a URL and login credentials, explores the web app, and generates, runs, and self-heals a Playwright end-to-end test suite.",
+    longDescription: "Built as Team Lead of team Amdak (4 members) for the Bessemer Tech Catalyst Hackathon (Bessemer Venture Partners India + Polaris School of Technology), on a problem statement by Aivar Innovations — reaching the semi-final round. The agent needs only a URL, username, and password, and outputs runnable Playwright tests as standard Pytest files.",
+    techDetails: [
+      "8-stage orchestrator state machine: explore, plan, critique, generate, validate, execute, triage, report — with a coverage gate.",
+      "Inline locator self-healing, plus triage that separates real bugs from script issues and flaky tests.",
+      "Cross-provider LLM failover across OpenRouter, Google Gemini, and Sarvam AI with per-run healing and cost limits.",
+      "Live decision log streamed to a React UI, with run history in PostgreSQL."
+    ],
+    outcomes: [
+      "Hackathon semi-finalist",
+      "Led a team of 4",
+      "Self-healing E2E test suites"
+    ],
+    tags: ["Python", "FastAPI", "Playwright", "Pytest", "React", "PostgreSQL"],
+    color: "text-amber-400",
+    link: "https://github.com/ali-mandela/aivar"
+  },
+
+  {
+    title: "Logistics Data Extractor – Fine-Tuned LLM",
+    icon: Package,
+    category: "AI/ML",
+    description: "Fine-tuned small language model that extracts structured JSON from unstructured logistics notes, deployed live on Hugging Face Spaces.",
+    longDescription: "Fine-tuned Gemma 3 (270M) using LoRA and Unsloth on a self-generated 1,000-sample dataset, then deployed it as a live inference app on Hugging Face Spaces with Gradio and ZeroGPU — covering the full pipeline from data generation to production serving.",
+    techDetails: [
+      "Self-generated 1,000-sample training dataset of logistics notes.",
+      "LoRA fine-tuning of Gemma 3 (270M) with Unsloth and PyTorch.",
+      "Average training loss reduced from 4.21 to 1.19.",
+      "Live Gradio inference app on Hugging Face Spaces (ZeroGPU)."
+    ],
+    outcomes: [
+      "Training loss 4.21 → 1.19",
+      "Live on Hugging Face Spaces"
+    ],
+    tags: ["Python", "PyTorch", "Unsloth", "LoRA", "Hugging Face", "Gradio"],
+    color: "text-emerald-400",
+    link: "https://huggingface.co/spaces/alimandela/freight-note-parser"
   },
 
   {
     title: "Corely – Multi-Tenant SaaS Platform",
     icon: Server,
     category: "Web Dev",
-    description: "Production-grade multi-tenant SaaS platform serving multiple independent clients with strict tenant isolation.",
-    longDescription: "Architected a shared-database multi-tenant system using tenant-scoped data isolation and role-based access control. Designed clean backend service layers, modular routing, and secure authentication workflows. Built for scalability and deployed in production serving real customers.",
+    description: "Multi-tenant SaaS platform with modular inventory, billing, and reporting services.",
+    longDescription: "Architected a multi-tenant SaaS platform with per-tenant database namespacing, JWT authentication, and an API gateway, with modular backend services for inventory, billing, and reporting built for horizontal scaling.",
     techDetails: [
-      "FastAPI backend with modular architecture (core, services, routes).",
-      "Tenant-aware middleware enforcing strict data isolation using tenant_id.",
-      "Role-Based Access Control (Admin / Manager / Staff).",
-      "MongoDB indexing optimized for tenant-scoped queries.",
-      "Dockerized deployment with environment-based configuration."
+      "Per-tenant database namespacing for tenant isolation.",
+      "JWT authentication and an API gateway.",
+      "Modular backend services for inventory, billing, and reporting.",
+      "Role-Based Access Control with role-scoped API access.",
+      "FastAPI backend, Angular frontend, Dockerized."
     ],
     outcomes: [
-      "Live paying customers",
-      "Secure tenant-level data segregation",
-      "Production-ready scalable architecture"
+      "Zero cross-tenant data leakage",
+      "Live deployment"
     ],
-    tags: ["FastAPI", "Angular", "MongoDB", "Multi-Tenant SaaS"],
+    tags: ["FastAPI", "Angular", "MongoDB", "Docker", "JWT", "RBAC"],
     color: "text-blue-400",
-    link: "https://corely-six.vercel.app/dashboard"
+    link: "https://corely-six.vercel.app/"
   },
 
   {
-    title: "K Classes (FLN) – Tutoring & Academic Assistance Platform",
+    title: "FLN Tutors – Academic Assistance Platform",
     icon: GraduationCap,
     category: "Web Dev",
-    description: "Academic assistance platform connecting students with subject experts — live in production at flntutors.com with 100+ active users.",
-    longDescription: "Built and shipped FLN, a live tutoring platform connecting students and domain experts, with real-time WebSocket chat, async task handling, and role-based dashboards for students, experts, and admins. TypeScript/Angular frontend backed by a Python service.",
+    description: "Academic assistance platform connecting students with domain experts through real-time chat and role-based dashboards — live at flntutors.com.",
+    longDescription: "Worked on FLN Tutors, an academic assistance platform connecting students with domain experts, with real-time WebSocket chat, asynchronous task handling, and role-based dashboards for students, experts, and admins.",
     techDetails: [
-      "TypeScript/Angular frontend (kclasses) for student and tutor dashboards.",
-      "Python backend service (sealserver) handling business logic and data.",
       "Real-time WebSocket chat between students and experts.",
-      "Async task handling and role-based dashboards (student / expert / admin).",
-      "Deployed and live in production at flntutors.com."
+      "Asynchronous task handling and role-based dashboards (student / expert / admin).",
+      "FastAPI and Next.js with MongoDB and Redis.",
+      "Deployed on AWS EC2, with AWS SES for transactional email and AWS SNS for notifications."
     ],
     outcomes: [
-      "Live in production with 100+ active users",
-      "Real-time chat & structured task workflows"
+      "10,000+ page visitors",
+      "500+ active users"
     ],
-    tags: ["TypeScript", "Angular", "Python", "WebSockets"],
+    tags: ["FastAPI", "Next.js", "WebSockets", "MongoDB", "Redis", "AWS"],
     color: "text-green-400",
     link: "https://www.flntutors.com/"
+  },
+
+  {
+    title: "fluid.ai – Autonomous Document-Generation Agent",
+    icon: FileText,
+    category: "AI/ML",
+    description: "FastAPI AI agent that turns a natural-language request into a planned, self-reviewed Microsoft Word (.docx) business document.",
+    longDescription: "An autonomous document generation agent built as a LangGraph state machine that plans a business document, drafts it section by section, critiques its own draft, and revises weak sections within a bounded revision limit.",
+    techDetails: [
+      "LangGraph state machine: plan → draft → critique → revise, with a bounded revision limit.",
+      "Structured LLM output decoupled from .docx rendering with python-docx.",
+      "Backblaze B2 storage and a Server-Sent Events endpoint that streams each agent step live.",
+      "Offline Pytest tests using a fake LLM."
+    ],
+    outcomes: [
+      "Self-revising drafting loop",
+      "Live step-by-step streaming"
+    ],
+    tags: ["Python", "FastAPI", "LangGraph", "Groq", "SSE", "Pytest"],
+    color: "text-orange-400",
+    link: "https://github.com/ali-mandela/fluid.ai"
   },
 
   {
     title: "LaaRide – Taxi Booking Platform for Ladakh",
     icon: Car,
     category: "Mobile",
-    description: "Digital taxi-stand platform modernizing shared-seat bookings for Ladakh's traditional stand-based taxi system.",
-    longDescription: "Instead of real-time ride-hailing, LaaRide digitizes the existing taxi-stand model — powering shared seat bookings, driver trip listings, and scalable transport management for the region.",
+    description: "In progress: a digital taxi-stand platform modernizing shared-seat taxi bookings for Ladakh's traditional stand-based taxi system.",
+    longDescription: "Designed to let drivers list upcoming fixed-route trips (for example, Kargil to Leh) and passengers book available seats, with support for private bookings.",
     techDetails: [
-      "FastAPI + MongoDB backend for bookings and driver trip listings.",
-      "Expo/React Native rider app for on-demand and fixed-route trips.",
-      "Built around Ladakh's high-altitude, stand-based taxi model rather than live ride-hailing."
+      "Asynchronous FastAPI backend with MongoDB (Motor) and a modular structure.",
+      "Versioned REST API (/api/v1).",
+      "React Native and Expo mobile app.",
+      "JWT auth, trip creation, seat booking, and payments planned as upcoming modules."
     ],
     outcomes: [
-      "Digitizes an existing regional taxi-stand system",
-      "Shared-seat and custom trip booking",
-      "Cross-platform mobile app (Leh–Kargil, Srinagar–Leh, Leh–Nubra routes)"
+      "In active development"
     ],
     tags: ["FastAPI", "MongoDB", "React Native", "Expo"],
     color: "text-yellow-400",
@@ -114,45 +178,23 @@ const projects = [
   },
 
   {
-    title: "fluid.ai – Autonomous Document-Generation Agent",
-    icon: FileText,
-    category: "AI/ML",
-    description: "FastAPI agent that plans, drafts, and self-revises business documents, returning a polished .docx file.",
-    longDescription: "Takes a natural-language request, autonomously plans a business document, drafts it section by section, reflects on and revises its own draft, and returns a polished Microsoft Word (.docx) file — via a LangGraph plan → execute → reflect → revise state machine.",
-    techDetails: [
-      "LangGraph state machine: plan → execute → reflect → revise (bounded re-revision loop).",
-      "FastAPI service exposing a single /agent endpoint.",
-      "Self-critique step where the agent reflects on and revises its own draft.",
-      "Outputs a production-ready .docx file."
-    ],
-    outcomes: [
-      "Self-revising AI drafting loop",
-      "Structured, section-by-section document generation"
-    ],
-    tags: ["Python", "FastAPI", "LangChain/LangGraph"],
-    color: "text-orange-400",
-    link: "https://github.com/ali-mandela/fluid.ai"
-  },
-
-  {
-    title: "peanut_ai – RAGA Health Dashboard",
+    title: "RAGA Health Dashboard (peanut_ai)",
     icon: HeartPulse,
     category: "Web Dev",
-    description: "B2B healthcare SaaS dashboard simulating patient management, analytics, and authentication for a clinical setting.",
-    longDescription: "A modern B2B healthcare dashboard built with React, TypeScript, and Vite, simulating a healthcare SaaS platform with Firebase authentication, analytics, and patient management.",
+    description: "B2B healthcare SaaS dashboard simulating patient management, analytics, and authentication for a clinical setting, using mock data.",
+    longDescription: "A B2B healthcare dashboard built with React, TypeScript, Vite, and Tailwind CSS, featuring Firebase Authentication with protected routes, an analytics dashboard, and patient management.",
     techDetails: [
-      "React + TypeScript + Vite frontend.",
-      "Firebase authentication (login system).",
-      "Analytics dashboard with charts and insights.",
-      "Patient management with grid and list views, search and filtering."
+      "Firebase Authentication with protected routes.",
+      "Analytics dashboard with Recharts.",
+      "Patient management with grid and list views, search, and filters by status and department.",
+      "Zustand state management, browser and in-app toast notifications, responsive layout."
     ],
     outcomes: [
-      "Full B2B healthcare dashboard simulation",
       "Live deployment"
     ],
-    tags: ["React", "TypeScript", "Vite", "Firebase"],
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Zustand", "Firebase"],
     color: "text-pink-400",
-    link: "https://peanut-ai-sooty.vercel.app/dashboard"
+    link: "https://peanut-ai-sooty.vercel.app"
   },
 
   {
@@ -160,35 +202,36 @@ const projects = [
     icon: Film,
     category: "Web Dev",
     description: "Netflix-style movie catalog and recommendation demo app.",
-    longDescription: "A sample movie catalog and recommendation platform with an Angular client and a Node.js/Express backend, showcasing content browsing and recommendation flows.",
+    longDescription: "A movie catalog and recommendation demo app with an Angular 19 frontend and a Node.js and MongoDB backend.",
     techDetails: [
-      "Angular frontend (fletnixClient) for movie browsing and recommendations.",
-      "Node.js/Express backend (fletnix-backend) with MongoDB."
+      "Angular 19 frontend for browsing and recommendations.",
+      "Node.js and MongoDB backend with JWT-based signup and sign-in APIs.",
+      "API tests."
     ],
     outcomes: [
       "Live deployment"
     ],
-    tags: ["Angular", "Node.js", "MongoDB"],
+    tags: ["Angular", "TypeScript", "Node.js", "MongoDB", "JWT"],
     color: "text-red-400",
-    link: "https://fletnix-client.vercel.app/"
+    link: "https://fletnix-client.vercel.app"
   },
 
   {
     title: "rateGaurd",
     icon: Gauge,
     category: "Backend/Tools",
-    description: "Python tool with a Streamlit dashboard for invoice-related rate guarding/validation.",
-    longDescription: "A Python-based guarding/validation utility with a live Streamlit dashboard for reviewing invoice data.",
+    description: "Python tool with a Streamlit dashboard for invoice-related rate guarding and validation.",
+    longDescription: "A Python tool with a Streamlit dashboard for invoice-related rate guarding and validation.",
     techDetails: [
       "Python core logic.",
-      "Streamlit dashboard interface for invoice review."
+      "Streamlit dashboard for invoice review."
     ],
     outcomes: [
       "Live deployment"
     ],
     tags: ["Python", "Streamlit"],
     color: "text-cyan-400",
-    link: "https://rategaurd.streamlit.app/invoices"
+    link: "https://rategaurd.streamlit.app/"
   },
 
   {
@@ -196,15 +239,17 @@ const projects = [
     icon: ShoppingCart,
     category: "Web Dev",
     description: "Full-stack ecommerce platform with a client storefront and backend services.",
-    longDescription: "An ecommerce platform pairing a React/Vite storefront with a JavaScript backend for product, order, and store management.",
+    longDescription: "A full-stack ecommerce platform with a React/Vite client storefront and backend services.",
     techDetails: [
-      "React + Vite storefront (eplatformck).",
-      "JavaScript backend service (eplatformbk)."
+      "React + Vite storefront.",
+      "Separate backend service."
     ],
-    outcomes: [],
+    outcomes: [
+      "Live deployment"
+    ],
     tags: ["React", "Vite", "JavaScript"],
     color: "text-blue-300",
-    link: "https://github.com/ali-mandela/eplatformck"
+    link: "https://eplatformck.vercel.app"
   },
 
   {
@@ -212,93 +257,61 @@ const projects = [
     icon: Truck,
     category: "Mobile",
     description: "Porter-style on-demand logistics and delivery platform, built for the UAE region.",
-    longDescription: "A logistics and delivery platform in the spirit of Porter (India), adapted for the UAE market — pairing a TypeScript/Expo client with a Python backend service.",
+    longDescription: "A Porter-style on-demand logistics and delivery platform built for the UAE region, pairing a TypeScript/Expo client with a Python backend.",
     techDetails: [
-      "TypeScript/Expo client app (Wassel).",
-      "Python backend service (Serve_wassel) for logistics operations."
+      "TypeScript/Expo client app.",
+      "Python backend service."
     ],
     outcomes: [],
     tags: ["TypeScript", "Expo", "Python"],
     color: "text-teal-400",
-    link: "https://github.com/ali-mandela/Wassel"
+    link: "https://github.com/ali-mandela"
   },
 
   {
     title: "truereturn – Return Validation System",
     icon: RotateCcw,
     category: "Backend/Tools",
-    description: "Validates whether a customer's product return is legitimate before it's approved. Under active development.",
-    longDescription: "A system that takes a product returned by a customer and evaluates whether the return is valid — currently under active construction, not yet finalized.",
+    description: "Validates whether a customer's product return is legitimate before it is approved. Under active development.",
+    longDescription: "A system that evaluates whether a customer's product return is legitimate before it is approved — under active development.",
     techDetails: [
-      "Currently under active development — architecture not yet finalized."
+      "Under active development."
     ],
     outcomes: [],
     tags: ["In Development"],
     color: "text-zinc-400",
-    link: "https://github.com/ali-mandela/truereturn"
+    link: "https://github.com/ali-mandela"
   },
 
   {
     title: "AI Agent & RAG System",
     icon: Cpu,
     category: "AI/ML",
-    description: "AI-powered backend service integrating OpenAI APIs with custom Retrieval-Augmented Generation pipelines.",
-    longDescription: "Developed intelligent backend services using OpenAI models combined with custom RAG pipelines for context-aware responses. Designed modular agent orchestration logic to automate domain-specific tasks and enhance system intelligence.",
+    description: "AI-powered backend service integrating OpenAI APIs with custom Retrieval-Augmented Generation (RAG) pipelines.",
+    longDescription: "An AI-powered backend service integrating OpenAI APIs with custom Retrieval-Augmented Generation (RAG) pipelines.",
     techDetails: [
-      "OpenAI API integration for LLM-based processing.",
-      "Custom RAG pipeline with document retrieval layer.",
-      "Agent-based orchestration logic for task automation.",
-      "Python modules integrated with FastAPI backend."
+      "OpenAI API integration.",
+      "Custom RAG pipelines.",
+      "Python backend."
     ],
-    outcomes: [
-      "Context-aware AI responses",
-      "Reusable AI service architecture",
-      "Production-ready AI integration"
-    ],
-    tags: ["AI", "OpenAI", "RAG", "Python"],
+    outcomes: [],
+    tags: ["OpenAI", "RAG", "Python"],
     color: "text-purple-300",
     link: "https://github.com/ali-mandela"
-  },
-
-  {
-    title: "askLuxor – Real Estate Marketplace",
-    icon: Zap,
-    category: "Web Dev",
-    description: "Role-based property marketplace with scalable listing and inquiry management.",
-    longDescription: "Designed a marketplace platform connecting agents, users, and admins. Implemented structured backend services for property listings, inquiries, and administrative workflows with secure authentication and scalable image handling.",
-    techDetails: [
-      "Node.js + Express backend with RESTful APIs.",
-      "MongoDB for scalable property storage.",
-      "Role-based authentication (Admin / Agent / User).",
-      "Cloud deployment on Render."
-    ],
-    outcomes: [
-      "Multi-role marketplace architecture",
-      "Secure property inquiry workflows",
-      "Scalable backend services"
-    ],
-    tags: ["Node.js", "Express", "MongoDB"],
-    color: "text-orange-300",
-    link: "https://askluxor.onrender.com"
   },
 
   {
     title: "Rapid Foods – Multi-Role Delivery System",
     icon: Zap,
     category: "Mobile",
-    description: "Comprehensive food delivery application supporting Admin, Restaurant, User, and Delivery Partner modules.",
-    longDescription: "Engineered a multi-module delivery system with real-time order tracking and secure payment integration. Designed scalable backend APIs for order lifecycle management and user account handling.",
+    description: "Food delivery application supporting Admin, Restaurant, User, and Delivery Partner modules.",
+    longDescription: "A food delivery application supporting Admin, Restaurant, User, and Delivery Partner modules, built with React Native, Node.js, and MongoDB.",
     techDetails: [
-      "Node.js backend with order lifecycle management.",
       "React Native mobile application.",
-      "Secure payment integration.",
-      "Role-based modules for multiple stakeholders."
+      "Node.js backend with MongoDB.",
+      "Role-based modules for Admin, Restaurant, User, and Delivery Partner."
     ],
-    outcomes: [
-      "End-to-end delivery workflow system",
-      "Multi-role scalable architecture",
-      "Secure transaction processing"
-    ],
+    outcomes: [],
     tags: ["React Native", "Node.js", "MongoDB"],
     color: "text-yellow-300",
     link: "https://github.com/ali-mandela"
