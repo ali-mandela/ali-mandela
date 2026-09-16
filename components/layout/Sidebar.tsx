@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { PortfolioMode } from "@/hooks/use-portfolio-mode";
 import { motion } from "framer-motion";
@@ -16,7 +17,8 @@ import {
   Linkedin,
   Mail,
   MessageSquare,
-  Heart
+  Heart,
+  FileText
 } from "lucide-react";
 
 interface SidebarProps {
@@ -105,6 +107,13 @@ export default function Sidebar({ mode, toggleMode, isTransitioning }: SidebarPr
       {/* Socials & Mode Toggle */}
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col gap-4">
+          <Link
+            href="/resume"
+            className="text-primary-text hover:text-highlight-text transition-colors"
+            aria-label="Resume"
+          >
+            <FileText className="w-4 h-4" />
+          </Link>
           {socialItems.map((social) => (
             <a 
               key={social.label}

@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Sparkles, ArrowRight, Github } from "lucide-react";
+import { Sparkles, ArrowRight, Github, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Hero() {
@@ -51,6 +52,14 @@ export default function Hero() {
             <Github className="w-4 h-4" />
             GitHub
           </a>
+
+          <Link
+            href="/resume"
+            className="group flex items-center justify-center gap-3 px-8 py-4 border border-border-ui text-highlight-text rounded-full font-semibold transition-all hover:bg-white/5"
+          >
+            <FileText className="w-4 h-4" />
+            Resume
+          </Link>
         </div>
       </motion.div>
 
