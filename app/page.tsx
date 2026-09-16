@@ -12,6 +12,7 @@ import TechStack from "@/components/sections/TechStack";
 import Hobbies from "@/components/sections/Hobbies";
 import Services from "@/components/sections/Services";
 import Terminal from "@/components/terminal/Terminal";
+import VisitorCount from "@/components/analytics/VisitorCount";
 import { usePortfolioMode } from "@/hooks/use-portfolio-mode";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -209,6 +210,7 @@ export default function Home() {
       {/* Footer / Copyright */}
       <footer className="fixed bottom-8 right-12 text-[10px] font-mono text-primary-text/40 tracking-widest uppercase z-50 pointer-events-none">
         © 2026 Muhammad Ali · SaaS & AI Engineer
+        <VisitorCount prefix=" · " />
       </footer>
     </div>
   );

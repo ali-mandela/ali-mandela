@@ -6,6 +6,7 @@ import {
   resumeDownloadUrl,
   resumePreviewUrl,
 } from "@/lib/resume";
+import VisitorCount from "@/components/analytics/VisitorCount";
 
 export const metadata: Metadata = {
   title: "Resume | Muhammad Ali — Software Engineer",
@@ -31,6 +32,8 @@ export default function ResumePage() {
             <h1 className="text-4xl font-bold text-highlight-text tracking-tight">
               Resume
             </h1>
+            <VisitorCount className="block mt-2 text-xs font-mono uppercase tracking-widest text-primary-text/60" />
+
           </div>
 
           {RESUME_DRIVE_FILE_ID && (

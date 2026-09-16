@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Inter, JetBrains_Mono } from "next/font/google";
+import VisitTracker from "@/components/analytics/VisitTracker";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -174,6 +175,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceLd) }}
         />
         {children}
+        <VisitTracker />
       </body>
     </html>
   );
